@@ -48,7 +48,7 @@ fn find_hyperscan() -> Result<PathBuf> {
 
         if cfg!(feature = "chimera") {
             cargo_emit::rustc_link_lib!("chimera" => "static");
-            cargo_emit::rustc_link_lib!("pcre" => "static");
+            //cargo_emit::rustc_link_lib!("pcre" => "static");
         }
 
         if cfg!(feature = "tracing") {
